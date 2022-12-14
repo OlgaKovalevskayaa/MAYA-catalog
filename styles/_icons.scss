@@ -1,0 +1,40 @@
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__language {
+        width: 82px;
+        height: 37px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 37px;
+        letter-spacing: 0.025em;
+    }
+    &__switch button {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 34px;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__arrow {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .icons {
+        &__switch button {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

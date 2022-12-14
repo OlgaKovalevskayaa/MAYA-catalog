@@ -1,0 +1,70 @@
+.coupon-two {
+    padding: 68px 410px 57px 409px;
+    background-image: url(../img/Question.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    &__heading {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+    &__paragraph {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 35px;
+    }
+    &__button {
+        display: inline-block;
+        max-width: 300px;
+        width: 100%;
+        height: 70px;
+        background: #BF7691;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 70px;
+        transition: 0.2s ease;
+        &:hover {
+            background: #ee6f9d;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .coupon-two {
+        padding: 50px 250px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .coupon-two {
+        padding: 50px 50px 50px 400px;
+    }
+}
+
+@media screen and (max-width: 716px) {
+    .coupon-two {
+        padding: 50px 50px 50px 400px;
+        &__heading {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        &__heading span {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        &__button {
+            min-width: 200px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .coupon-two {
+        padding: 50px 50px 50px 50px;
+    }
+}

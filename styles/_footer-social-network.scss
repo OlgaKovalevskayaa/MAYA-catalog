@@ -1,0 +1,24 @@
+.footer-social-network {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    &__img {
+        &:not(:last-child) {
+            margin-right: 72.5px;
+        }
+    }
+    & a:hover {
+        transform: scale(1.7);
+        transition: all .9s, linear .9s;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .footer-social-network {
+        &__img {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+    }
+}

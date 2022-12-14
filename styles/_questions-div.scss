@@ -1,0 +1,51 @@
+.questions-div {
+    margin-top: 114px;
+    &__div {
+        text-align: left;
+        margin: 0 auto;
+        background: #FFFFFF;
+        border: 1px solid #E8E5E5;
+        border-radius: 10px;
+        max-width: 972px;
+        padding: 28px 140px 29px 81px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 81px;
+        top: 31px;
+        bottom: 30px;
+        &:hover {
+            transform: rotate(50deg);
+            transition: 0.2s ease;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .questions-div {
+        margin-top: 60px;
+        &__div {
+            padding: 28px 90px 29px 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #4D4D4D;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__button {
+            position: absolute;
+            right: 40px;
+        }
+    }
+}

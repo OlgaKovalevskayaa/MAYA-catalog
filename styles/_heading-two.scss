@@ -1,0 +1,15 @@
+.heading-two {
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+@media screen and (max-width: 500px) {
+    .heading-two {
+        color: #4D4D4D;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+    }
+}

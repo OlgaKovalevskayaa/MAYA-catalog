@@ -1,0 +1,15 @@
+.novelties {
+    padding-bottom: 219px;
+    &__heading {
+        margin-bottom: 114px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .novelties {
+        padding-bottom: 100px;
+        &__heading {
+            margin-bottom: 60px;
+        }
+    }
+}

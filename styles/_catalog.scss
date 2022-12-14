@@ -1,0 +1,15 @@
+.catalog {
+    padding: 202px 0 228px;
+    &__heading {
+        margin-bottom: 114px;
+    }
+}
+
+@media screen and (max-width: 1445px) {
+    .catalog {
+        padding: 100px 0 100px;
+        &__heading {
+            margin-bottom: 64px;
+        }
+    }
+}

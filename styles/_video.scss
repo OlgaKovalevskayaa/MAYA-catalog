@@ -1,0 +1,17 @@
+.video {
+    max-width: 200px;
+    height: 355px;
+    position: relative;
+    &__img {
+        border-radius: 10px;
+    }
+    &__heading {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        width: 167px;
+        height: 44px;
+        margin-top: 12px;
+    }
+}

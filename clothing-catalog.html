@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-clothing-catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/610c345b31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="shares">Познакомьтесь с акциями этого месяца от MAYA</div>
+        <div class="wrapper">
+            <header class="header header--black">
+                <a href="index.html"><img class="header__logo" src="img/Logo-grey.jpg" alt="logo"></a>
+                <nav class="menu">
+                    <a class="menu__link" href="#">О нас</a>
+                    <a class="menu__link" href="clothing-catalog.html">Каталог</a>
+                    <a class="menu__link" href="dostavka.html">Доставка</a>
+                </nav>
+                <a class="header__link" href="tel:+11234567890">8 (800) 233-44-55</a>
+            </header>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="control-panel">
+            <div class="filters">
+                <div class="filters-sort">
+                    <label for="sort">Сортировка:</label>
+                    <select name="sort" id="sort">
+                            <option selected value="alphabet">По алфавиту</option>
+                            <option value="expensive">Сначала дорогие</option>
+                            <option value="cheap">Сначала дешевые</option>
+                            <option value="rating">Рейтинг</option>
+                        </select>
+                </div>
+            </div>
+            <div class="site-search">
+                <input type="search" id="search-input">
+                <button type="button" id="search-btn" class="fa fa-search"></i>
+            </div>  
+        </div>
+      <section id="shop-items">
+      </section>
+      <p id="nothing-found"></p>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+          <h2 class="footer__heading heading-two">СЛЕДИТЕ ЗА НАШИМИ НОВИНКАМИ</h2>
+          <nav class="footer-nav">
+              <a class="footer-nav__link" href="#">Каталог</a>
+              <a class="footer-nav__link" href="#">Доставка</a>
+              <a class="footer-nav__link" href="#">Оплата</a>
+          </nav>
+
+          <div class="footer-social-network">
+              <a class="footer-social-network__img" href="https://www.instagram.com/"><img src="icons/Instagram.svg" alt="Instagram"></a>
+              <a class="footer-social-network__img" href="https://www.youtube.com/"><img src="icons/Youtube.svg" alt="Youtube"></a>
+              <a class="footer-social-network__img" href="https://tlgrm.ru/"><img src="icons/Telegram.svg" alt="Telegram"></a>
+          </div>
+
+          <p class="footer__paragraph">Оставьте адрес своей электронной почты</p>
+
+          <div class="footer-box-button">
+              <a class="footer-box-button__link" href="mailto:Ivanovivan@mail.ru">Ivanovivan@mail.ru</a>
+              <a class="footer-box-button__link" href="#">Получать новости на email</a>
+          </div>
+
+          <div class="legal-data">
+              <ul class="legal-data__ul-left">
+                  <li>ИНН 458475835656</li>
+                  <li>ОГРН 34894589345</li>
+              </ul>
+
+              <p class="legal-data__paragraph">Maya store (C) 2021 Все права защищены</p>
+
+              <ul class="legal-data__ul-right">
+                  <li>8 (800) 233-44-55</li>
+                  <li>Политика конфиденциальности</li>
+              </ul>
+          </div>
+      </div>
+    </footer>
+    <template id="item-template">
+        <div class="shop-item">
+          <img src="">
+          <div class="content">
+            <div class="tags"></div>
+            <h1></h1>
+            <p></p>
+          </div>
+          <div class="footer">
+            <span class="price"></span>
+            <div class="rating"></div>
+          </div>
+        </div>
+        </div>
+      </template>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 33px;
+    &__link {
+        font-size: 24px;
+        line-height: 29px;
+        &:hover {
+            opacity: 0.5;
+        }
+        &::before {
+            content: "";
+            display: inline-block;
+            background-image: url(../icons/Vector_1.svg);
+            width: 40px;
+            height: 40px;
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.header--black a {
+    color: #484848;
+}
+
+@media screen and (max-width: 930px) {
+    .header {
+        padding-top: 28px;
+        &__link {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        justify-content: space-around;
+        &__link {
+            display: none;
+        }
+    }
+}
